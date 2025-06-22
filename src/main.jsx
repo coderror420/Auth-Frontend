@@ -2,7 +2,7 @@ import React from "react"
 import { StrictMode } from 'react'
 import ReactDOM from "react-dom/client";
 import { createRoot } from 'react-dom/client'
-import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
+import { createHashRouter, RouterProvider, Outlet } from "react-router-dom";
 import Header from "./components/Header";
 import AdminPanel from "./pages/AdminPanel";
 import Login from "./pages/Login"
@@ -20,7 +20,7 @@ const AppLayout = ()=>{
   );
 }
 
-const AppRouter = createBrowserRouter([
+const AppRouter = createHashRouter([
   {
     path: "/",
     element: <AppLayout />,
