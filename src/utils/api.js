@@ -1,8 +1,9 @@
 import axios from 'axios';
-import { getAccessToken } from './auth';
+import { getAccessToken , getRefreshToken } from './auth';
+
 
 const api = axios.create({
-  baseURL: `${import.meta.env.VITE_API_BASE_URL}`, 
+  baseURL: import.meta.env.VITE_API_BASE_URL, 
 });
 api.interceptors.request.use((config) => {
   const token = getAccessToken();

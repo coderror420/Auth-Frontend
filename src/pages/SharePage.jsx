@@ -1,6 +1,7 @@
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
-import api from "../utils/api"; 
+import axios from "axios";
+import api from "../utils/api";
 
 const SharePage = () => {
   const { token } = useParams();
@@ -10,8 +11,9 @@ const SharePage = () => {
 
   useEffect(() => {
     console.log(token);
-    api.get(`/share?shareToken=${token}`)
+    api.get(`${import.meta.env.VITE_API_BASE_URL}/share?shareToken=${token}`)
       .then(res => {
+        console.log(`response`);
         const data = Array.isArray(res.data) ? res.data : [res.data];
         setStudentData(data);
       })

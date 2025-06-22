@@ -11,9 +11,8 @@ const AdminPanel = () => {
   const generateLink = async () => {
     try {
       const res = await api.post("/share"); 
-      console.log(res.data)
       const token = res.data?.token || res.data?.shareToken;
-      setShareLink(`/share/${token}`);
+      setShareLink(`${window.location.origin}/share/${token}`);
       setError("");
     } catch (err) {
       if (err.response?.status === 401) {
