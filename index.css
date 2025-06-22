@@ -7,7 +7,7 @@
   width: 8px;
 }
 ::-webkit-scrollbar-thumb {
-  background: #ffa602; /* teal-500 */
+  background: #aeaeae; /* teal-500 */
   border-radius: 9999px;
 }
 ::-webkit-scrollbar-track {
@@ -17,5 +17,5 @@
 /* Firefox */
 * {
   scrollbar-width: thin;
-  scrollbar-color: #ffa602 transparent;
+  scrollbar-color: #aeaeae transparent;
 }
