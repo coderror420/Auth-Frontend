@@ -17,7 +17,7 @@ This is the frontend of an authentication system built using **React (Vite)**. I
 - Tailwind CSS
 - Axios
 - JWT
-- Google reCAPTCHA (or custom CAPTCHA)
+- JavaScript for CAPTCHA logic
 - React Router DOM
   
 ## Preview
