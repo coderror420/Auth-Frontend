@@ -13,7 +13,7 @@ This is the frontend of an authentication system built using **React (Vite)**. I
 
 ## 🖼️ Preview
 
-![Screenshot](\public\image.png) <!-- Replace with an actual image URL or remove if not available -->
+![Screenshot](\image.png) <!-- Replace with an actual image URL or remove if not available -->
 
 ## 🛠️ Tech Stack
 
