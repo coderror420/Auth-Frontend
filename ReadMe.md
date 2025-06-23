@@ -21,7 +21,7 @@ This is the frontend of an authentication system built using **React (Vite)**. I
 - React Router DOM
 
 ## 📁 Project Structure
-Frontend/
+```Frontend/
 ├── public/
 │ ├── _redirects
 │ ├── image.png 
@@ -46,4 +46,4 @@ Frontend/
 ├── postcss.config.mjs
 ├── vite.config.js
 ├── vercel.json
-└── ReadMe.md
+└── ReadMe.md```
