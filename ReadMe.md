@@ -46,4 +46,4 @@ This is the frontend of an authentication system built using **React (Vite)**. I
 ├── postcss.config.mjs
 ├── vite.config.js
 ├── vercel.json
-└── ReadMe.md```
+└── ReadMe.md
