@@ -24,7 +24,7 @@ This is the frontend of an authentication system built using **React (Vite)**. I
 ![image](https://github.com/user-attachments/assets/61e42fd9-7621-4f15-ba80-06ad63745e13)
 
 
-## 📁 Project Structure
+## Project Structure
 ```Frontend/
 ├── public/
 │ ├── _redirects
