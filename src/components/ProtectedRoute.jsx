@@ -13,7 +13,7 @@ const ProtectedRoute = ({ children }) => {
       const refreshToken = getRefreshToken();
 
       if (accessToken) {
-        setIsAllowed(true);
+        setIsAllowed(true); 
         setLoading(false);
         return;
       }
