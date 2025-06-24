@@ -17,6 +17,22 @@ api.interceptors.response.use(
   res => res,
   async err => {
     if (err.response?.status === 401 && getRefreshToken()) {
+      try {
+        const refreshResponse = await axios.post('/refresh', {
+          refreshToken: getRefreshToken()
+        });
+
+        const newAccessToken = refreshResponse.data.accessToken;
+        localStorage.setItem('accessToken', newAccessToken);
+
+   
+        err.config.headers.Authorization = `Bearer ${newAccessToken}`;
+        return axios(err.config);
+      } catch (refreshError) {
+
+        localStorage.clear();
+        window.location.href = "/login";
+      }
     }
     return Promise.reject(err);
   }
